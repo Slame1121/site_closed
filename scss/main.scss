@@ -1,0 +1,88 @@
+@import "vars";
+
+*{
+  outline: 0;
+}
+
+body{
+  font-family: $font-yandex-regular;
+
+  .closed_container{
+    &-content{
+      margin:70px 0 60px;
+      text-align: center;
+      p{
+        margin: 0;
+        font-weight: 600;
+        font-size: 36px;
+        &.title{
+          font-size: 72px;
+
+        }
+      }
+      span{
+        font-size: 23px;
+      }
+      a{
+        font-size: 24px;
+        color:#000;
+        &.email{
+          text-decoration: none;
+          padding: 40px 0;
+          background: url('../images/review-background.png') no-repeat center;
+          color:#fff;
+          font-size: 36px;
+          display: flex;
+          font-weight: bold;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: auto;
+            margin-right:15px;
+          }
+        }
+      }
+    }
+    &-footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__social{
+        a{
+          display: inline-block;
+          margin-left:5px;
+        }
+      }
+      &__address{
+        p{
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+    &-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__tel{
+        a{
+          color:#000;
+          text-decoration: none;
+          margin-left:15px;
+          font-weight: bold;
+        }
+        &-icon{
+          margin-left:15px;
+          float:right;
+          display: block;
+          width: 18px;
+          height: 18px;
+          background: url('../images/icon-tel.png');
+        }
+      }
+    }
+  }
+}
+
+@import "media";
